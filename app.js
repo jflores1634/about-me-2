@@ -36,4 +36,4 @@ alert( 'Hi! I\'m going to ask you a few questions.');
 
     alert('Well alright! So far ' + usernNameInput + ', we have learned that you answered "' + headExplode +
     '" to my first question. You have lived in Washington for ' + questionTwoAns + ' and you have ridden the Sounder train ' +
-    questionThreeAns + '! You also answered "' + questionFourAns +  'And you prefer ' + questionFiveAns + '. I think I learned a lot about you today! Now you will learn a little about me.');
+    questionThreeAns + ' times! You also answered "' + questionFourAns + '" to my coding question and you prefer ' + questionFiveAns + '. I think I learned a lot about you today! Now you will learn a little about me.');
