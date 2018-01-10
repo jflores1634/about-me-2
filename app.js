@@ -1,6 +1,7 @@
 'use strict'
 
 alert( 'Hi! I\'m going to ask you a few questions.');
+// add touppercase or tolowercase
 
     var usernNameInput = prompt('What is your name?');
     console.log('The user entered:' + usernNameInput);

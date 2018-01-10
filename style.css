@@ -15,8 +15,9 @@ h2 {
 
 #me {
   float: right;
-  margin-left: 10px;
-  
+  margin: 10px;
+  max-width: 50%;
+  height: auto;
 }
 
 p {
