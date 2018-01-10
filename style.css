@@ -1,0 +1,25 @@
+h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 25px 25px;
+  color: black;
+}
+
+h2 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  background-color: grey;
+  color: white;
+}
+
+#me {
+  float: right;
+  margin-left: 10px;
+  
+}
+
+p {
+  font-size: 20px;
+  color: black;
+}
