@@ -2,10 +2,13 @@
 
 alert( 'Hi! I\'m going to ask you a few questions.');
 // add touppercase or tolowercase
-var usernNameInput = prompt('What is your name?');
+var usernNameInput;
 function userName() {
+  usernNameInput = prompt('What is your name?');
   console.log('The user entered:' + usernNameInput.toUpperCase());
 }
+
+userName();
 
 var headExplode = prompt('Do you think your head will explode after this week of instruction?');
 console.log(usernNameInput + ' answered:' + headExplode);
@@ -79,7 +82,7 @@ if (!flag) {
   console.log();
 }
 
-userName();
+
 
 
 
