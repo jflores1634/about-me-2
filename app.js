@@ -6,14 +6,13 @@ var usernNameInput;
 function userName() {
   usernNameInput = prompt('What is your name?');
   console.log('The user entered:' + usernNameInput.toUpperCase());
+  alert('Hi ' + usernNameInput + ', thank you for visiting my site!');
 }
 
 function exQuestion() {
   var headExplode = prompt('Do you think your head will explode after this week of instruction?');
   console.log(usernNameInput + ' answered:' + headExplode);
-
   // if else statements
-
   if(headExplode === 'yes' || headExplode === 'Yes' || headExplode === 'YES' || headExplode === 'Y' || headExplode === 'y') {
     alert('Cool beans!');
   } else if (headExplode === 'no' || headExplode === 'No' || headExplode === 'NO' || headExplode === 'n' || headExplode === 'N') {
@@ -29,15 +28,16 @@ function pnwLiving() {
   alert('Wow! That is a long time ' + usernNameInput + '!' + ' Ok, on to the next question.');
 }
 
+function chooChoo() {
+  var questionThreeAns = prompt('How many times have you ridden the Sounder train?');
+  console.log(usernNameInput + ' answer:' + questionThreeAns);
+  alert('Not bad! The Sounder train can be a great way to travel!');
+}
+
 userName();
-alert('Hi ' + usernNameInput + ', thank you for visiting my site!');
 exQuestion();
 pnwLiving();
-
-var questionThreeAns = prompt('How many times have you ridden the Sounder train?');
-console.log(usernNameInput + ' answer:' + questionThreeAns);
-
-alert('Not bad! The Sounder train can be a great way to travel!');
+chooChoo();
 
 var questionFourAns = prompt('Have you coded before?');
 console.log(usernNameInput + ' answer:' + questionFourAns);
