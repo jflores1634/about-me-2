@@ -1,10 +1,11 @@
-'use strict'
+'use strict';
 
 alert( 'Hi! I\'m going to ask you a few questions.');
 // add touppercase or tolowercase
-
 var usernNameInput = prompt('What is your name?');
-console.log('The user entered:' + usernNameInput.toUpperCase);
+function userName() {
+  console.log('The user entered:' + usernNameInput.toUpperCase());
+}
 
 var headExplode = prompt('Do you think your head will explode after this week of instruction?');
 console.log(usernNameInput + ' answered:' + headExplode);
@@ -24,7 +25,7 @@ alert('Hi ' + usernNameInput + ', thank you for visiting my site!');
 var questionTwoAns = prompt('How long have you lived in Washington? Please answer with number and years.');
 console.log(usernNameInput + ' answer:' + questionTwoAns);
 
-alert('Wow! That is a long time ' +  usernNameInput +'!'+ ' Ok, on to the next question.');
+alert('Wow! That is a long time ' + usernNameInput + '!' + ' Ok, on to the next question.');
 
 var questionThreeAns = prompt('How many times have you ridden the Sounder train?');
 console.log(usernNameInput + ' answer:' + questionThreeAns);
@@ -52,17 +53,17 @@ for (var i = 0; i < favNum.length; i++) {
     break;
   }
 }
-  if (!flag) {
-    alert('Wrong! Guess again!');
-    console.log();
+if (!flag) {
+  alert('Wrong! Guess again!');
+  console.log();
 }
 
 
 var movies = ['The Matrix'];
 var answer = prompt('What is one of my favorite movies? Choose from pencil, Die Hard, Total Recall, The Matrix.');
-var flag;
 
-for (var i = 0; i < movies.length; i++) {
+
+for ( i = 0; i < movies.length; i++) {
   console.log('each item at each interation:' + movies[i]);
 
   if (answer === movies[0]) {
@@ -70,7 +71,7 @@ for (var i = 0; i < movies.length; i++) {
     flag = true;
     break;
   }
-continue;
+  continue;
 }
 
 if (!flag) {
@@ -78,6 +79,7 @@ if (!flag) {
   console.log();
 }
 
+userName();
 
 
 
