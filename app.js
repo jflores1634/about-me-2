@@ -8,20 +8,25 @@ function userName() {
   console.log('The user entered:' + usernNameInput.toUpperCase());
 }
 
-userName();
 
-var headExplode = prompt('Do you think your head will explode after this week of instruction?');
-console.log(usernNameInput + ' answered:' + headExplode);
 
-// if else statements
+function exQuestion() {
+  var headExplode = prompt('Do you think your head will explode after this week of instruction?');
+  console.log(usernNameInput + ' answered:' + headExplode);
 
-if(headExplode === 'yes' || headExplode === 'Yes' || headExplode === 'YES' || headExplode === 'Y' || headExplode === 'y') {
-  alert('Cool beans!');
-} else if (headExplode === 'no' || headExplode === 'No' || headExplode === 'NO' || headExplode === 'n' || headExplode === 'N') {
-  alert('Then you must be cooler than cool beans!');
-} else {
-  alert('Please enter yes or no!');
+  // if else statements
+
+  if(headExplode === 'yes' || headExplode === 'Yes' || headExplode === 'YES' || headExplode === 'Y' || headExplode === 'y') {
+    alert('Cool beans!');
+  } else if (headExplode === 'no' || headExplode === 'No' || headExplode === 'NO' || headExplode === 'n' || headExplode === 'N') {
+    alert('Then you must be cooler than cool beans!');
+  } else {
+    alert('Please enter yes or no!');
+  }
 }
+
+userName();
+exQuestion();
 
 alert('Hi ' + usernNameInput + ', thank you for visiting my site!');
 
