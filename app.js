@@ -34,59 +34,60 @@ function chooChoo() {
   alert('Not bad! The Sounder train can be a great way to travel!');
 }
 
+function proHack() {
+  var questionFourAns = prompt('Have you coded before?');
+  console.log(usernNameInput + ' answer:' + questionFourAns);
+}
+
+function cupOJoe() {
+  var questionFiveAns = prompt('Do you prefer coffee or tea?');
+  console.log(usernNameInput + ' answer:' + questionFiveAns);
+}
+// Question 6
+function guessNum() {
+  var favNum = [5];
+  var answerNum = prompt('Guess what my favorite number is! From 1 to 5!');
+  var flag;
+  for (var i = 0; i < favNum.length; i++) {
+    console.log('i is equal to:' + favNum[i]);
+    if (answerNum === favNum[0]) {
+      alert('You guessed right!');
+      flag = true;
+      break;
+    }
+  }
+  if (!flag) {
+    alert('Wrong! Guess again!');
+    console.log();
+  }
+}
+
+function favMovies() {
+  var movies = ['The Matrix'];
+  var answer = prompt('What is one of my favorite movies? Choose from pencil, Die Hard, Total Recall, The Matrix.');
+  for (var i = 0; i < movies.length; i++) {
+    console.log('each item at each interation:' + movies[i]);
+    if (answer === movies[0]) {
+      alert('You guessed right!');
+      var flag = true;
+      break;
+    }
+    continue;
+  }
+  if (!flag) {
+    alert('Wrong! Guess again!');
+    console.log();
+  }
+}
+
 userName();
 exQuestion();
 pnwLiving();
 chooChoo();
-
-var questionFourAns = prompt('Have you coded before?');
-console.log(usernNameInput + ' answer:' + questionFourAns);
-
-var questionFiveAns = prompt('Do you prefer coffee or tea?');
-console.log(usernNameInput + ' answer:' + questionFiveAns);
-
-// Question 6
-
-var favNum = [5];
-var answerNum = prompt('Guess what my favorite number is! From 1 to 5!');
-var flag;
-
-for (var i = 0; i < favNum.length; i++) {
-  console.log('i is equal to:' + favNum[i]);
-
-  if (answerNum === favNum[0]) {
-    alert('You guessed right!');
-    flag = true;
-    break;
-  }
-}
-if (!flag) {
-  alert('Wrong! Guess again!');
-  console.log();
-}
-
-
-var movies = ['The Matrix'];
-var answer = prompt('What is one of my favorite movies? Choose from pencil, Die Hard, Total Recall, The Matrix.');
-
-
-for ( i = 0; i < movies.length; i++) {
-  console.log('each item at each interation:' + movies[i]);
-
-  if (answer === movies[0]) {
-    alert('You guessed right!');
-    flag = true;
-    break;
-  }
-  continue;
-}
-
-if (!flag) {
-  alert('Wrong! Guess again!');
-  console.log();
-}
-
-
+proHack();
+cupOJoe();
+guessNum();
+favMovies();
 
 
 
