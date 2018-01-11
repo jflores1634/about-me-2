@@ -11,6 +11,15 @@ h2 {
   text-align: left;
   background-color: grey;
   color: white;
+  padding: 20px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+h3 {
+  font-size: 25px;
+  text-align: left;
+  padding: 25px;
 }
 
 #me {
@@ -18,9 +27,24 @@ h2 {
   margin: 10px;
   max-width: 50%;
   height: auto;
+  border: 2px solid black;
 }
 
 p {
   font-size: 20px;
   color: black;
+  padding: 15px 15px;
+}
+
+#byYear {
+  margin: 10px;
+}
+
+#topTen {
+  margin: 10px;
+}
+
+li {
+  list-style-type: disc;
+  display: list-item;
 }

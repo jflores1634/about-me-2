@@ -35,6 +35,49 @@ alert( 'Hi! I\'m going to ask you a few questions.');
     var questionFiveAns = prompt('Do you prefer coffee or tea?');
     console.log(usernNameInput + ' answer:' + questionFiveAns);
 
-    alert('Well alright! So far ' + usernNameInput + ', we have learned that you answered "' + headExplode +
-    '" to my first question. You have lived in Washington for ' + questionTwoAns + ' and you have ridden the Sounder train ' +
-    questionThreeAns + ' times! You also answered "' + questionFourAns + '" to my coding question and you prefer ' + questionFiveAns + '. I think I learned a lot about you today! Now you will learn a little about me.');
+    var questionSixAns = prompt('From number 1 through 5, can you guess which is my favorite number?');
+    console.log(usernNameInput + ' answered:' + questionSixAns);
+
+    var favNum = [1, 2, 3, 4, 5];
+    var guessNum = 4;
+    while(guessNum < 4) {
+    alert('Awesome ' + usernNameInput + ', you got it right!');
+    } else if (questionSixAns === '1' || headExplode === '2' || headExplode === '4' || headExplode === '5') {
+      alert('Sorry ' + usernNameInput + ', keep guessing!');
+    }
+    guessNum++;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // alert('Well alright! So far ' + usernNameInput + ', we have learned that you answered "' + headExplode +
+    // '" to my first question. You have lived in Washington for ' + questionTwoAns + ' and you have ridden the Sounder train ' +
+    // questionThreeAns + ' times! You also answered "' + questionFourAns + '" to my coding question and you prefer ' + questionFiveAns + '. I think I learned a lot about you today! Now you will learn a little about me.');
