@@ -8,8 +8,6 @@ function userName() {
   console.log('The user entered:' + usernNameInput.toUpperCase());
 }
 
-
-
 function exQuestion() {
   var headExplode = prompt('Do you think your head will explode after this week of instruction?');
   console.log(usernNameInput + ' answered:' + headExplode);
@@ -25,15 +23,16 @@ function exQuestion() {
   }
 }
 
+function pnwLiving() {
+  var questionTwoAns = prompt('How long have you lived in Washington? Please answer with number and years.');
+  console.log(usernNameInput + ' answer:' + questionTwoAns);
+  alert('Wow! That is a long time ' + usernNameInput + '!' + ' Ok, on to the next question.');
+}
+
 userName();
-exQuestion();
-
 alert('Hi ' + usernNameInput + ', thank you for visiting my site!');
-
-var questionTwoAns = prompt('How long have you lived in Washington? Please answer with number and years.');
-console.log(usernNameInput + ' answer:' + questionTwoAns);
-
-alert('Wow! That is a long time ' + usernNameInput + '!' + ' Ok, on to the next question.');
+exQuestion();
+pnwLiving();
 
 var questionThreeAns = prompt('How many times have you ridden the Sounder train?');
 console.log(usernNameInput + ' answer:' + questionThreeAns);
